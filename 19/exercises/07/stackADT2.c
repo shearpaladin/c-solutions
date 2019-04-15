@@ -21,7 +21,7 @@ struct stack_type {
 
 static void resize_contents(Stack s)
 {
-    s->contents = realloc(s->contents, (s-<size *= 2) * sizeof(Item));
+    s->contents = realloc(s->contents, (s->size *= 2) * sizeof(Item));
 }
 
 static void terminate(const char *message)
